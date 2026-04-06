@@ -2,7 +2,7 @@ def copy_file(command: str) -> None:
     if not command:
         return
 
-    command_list: str = command.split()
+    command_list: list[str] = command.split()
 
     if len(command_list) != 3:
         return
